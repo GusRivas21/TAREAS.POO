@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/perfil.css">
+    <title>perfil</title>
+</head>
+<body>
+    <br>
+    <button type="button" class="btn btn-primary position-relative">
+        Perfil
+        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+        <span class="visually-hidden">New alerts</span>
+        </span>
+    </button>
+    <br><br>
+    <div class="card" style="width: 18rem;">
+    <a href="#" onclick="Enviar()"> <img src="/img/imgs.png" title="Editar información" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+        <h5 class="card-title" id="Nombre"></h5>
+        </div>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item" id="FechaNac"></li>
+        <li class="list-group-item" id="Genero"></li>
+        <li class="list-group-item" id="Departamento"></li>
+        <li class="list-group-item" id="Ciudad"></li>
+        <li class="list-group-item" id="NumTelefono"></li>
+        <li class="list-group-item" id="Descripcion"></li>
+        </ul>
+    </div>
+</body>
+</html>
+<script>
+    let urlParams = new URLSearchParams(window.location.search);
+
+    let nombre1 = urlParams.get('Nombre');
+    let fecha1 = urlParams.get('FechaNac');
+    let genero1 = urlParams.get('Genero');
+    let departamento1 = urlParams.get('Departamento');
+    let ciudad1 = urlParams.get('Ciudad');
+    let telefono1 = urlParams.get('NumTelefono');
+    let descripcion1 = urlParams.get('Descripcion');
+
+document.getElementById('Nombre').innerText = 'Nombre:' + nombre1 ;
+document.getElementById('FechaNac').innerText = 'Fecha de nacimiento:' + fecha1 ;
+document.getElementById('Genero').innerText = 'Genero:' + genero1 ;
+document.getElementById('Departamento').innerText = 'Departamento:' + departamento1 ;
+document.getElementById('Ciudad').innerText = 'Ciudad:' + ciudad1 ;
+document.getElementById('NumTelefono').innerText = 'Telefono:' + telefono1 ;
+document.getElementById('Descripcion').innerText = 'Descripcion:' + descripcion1 ;
+
+function Enviar(){
+    let url = '/html/editar.html?Nombre= ' + encodeURIComponent(nombre1) +
+        '&FechaNac= ' + encodeURIComponent(fecha1) +
+        '&Genero= ' + encodeURIComponent(genero1) +
+        '&Departamento= ' + encodeURIComponent(departamento1) +
+        '&Ciudad= ' + encodeURIComponent(ciudad1) +
+        '&NumTelefono=  ' + encodeURIComponent(telefono1) +
+        '&Descripcion=' + encodeURIComponent(descripcion1);
+
+        window.location.href = url;
+}
+</script>

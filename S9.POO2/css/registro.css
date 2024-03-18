@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.Conteiner {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Crear-Usuario-Conteiner {
+    min-width: 100vw;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.Crear-Usuario {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+
+.Crear-Perfil div {
+    margin-bottom: 10px;
+}
+
+.Crear-Perfil div label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.btn {
+    padding: 12px 24px;
+    background-color:dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: slateblue;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/editar.css">
+    <title>Editar</title>
+</head>
+<body>
+    <div class="box">
+        <br><br><br>
+    <label for="">Nombre</label><br>
+    <input type="text" name="" id="Nombre"><br><br>
+    <label for="">Fecha de nacimiento</label><br>
+    <input type="date" name="" id="FechaNac"><br><br>
+    <label for="">Genero</label><br>
+	<input type="text" name="" id="Genero"/><br><br>
+    <label for="">Departamento</label><br>
+    <input type="text" name="" id="Departamento"><br><br>
+    <label for="">Ciudad</label><br>
+    <input type="text" name="" id="Ciudad"><br><br>
+    <label for="">Numero de teléfono</label><br>
+    <input type="text" name="" id="NumTelefono"><br><br>
+    <label for="">Descripcion</label><br>
+    <input type="text" name="" id="Descripcion"><br><br>
+    <br>
+    <input type="button" value="Editar información" onclick="CrearUsuario()">
+    </div>
+</body>
+</html>
+
+<script>
+    var urlParams = new URLSearchParams(window.location.search) ;
+
+    let nombre = urlParams.get('Nombre') ;
+    let fecha = urlParams.get('FechaNac') ;
+    let genero = urlParams.get('Genero') ;
+    let departamento = urlParams.get('Departamento') ;
+    let ciudad = urlParams.get('Ciudad') ;
+    let telefono = urlParams.get('NumTelefono') ;
+    let descripcion = urlParams.get('Descripcion');
+
+    document.getElementById('Nombre').value = nombre ;
+    document.getElementById('FechaNac').value = fecha ;
+    document.getElementById('Genero').value = genero ;
+    document.getElementById('Departamento').value = departamento ;
+    document.getElementById('Ciudad').value = ciudad ;
+    document.getElementById('NumTelefono').value = telefono ;
+    document.getElementById('Descripcion').value = descripcion ;
+</script>
+
+<script src="/js/Re+Se.js"></script>

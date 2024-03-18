@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 10px #007bff;
+    padding: 15px;
+    border: 2px solid black ;
+}
+
+label {
+    color: white;
+    margin: 5px;
+}
+
+input {
+    border-radius: 5px;
+    padding: 5px;
+}

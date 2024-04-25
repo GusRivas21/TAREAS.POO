@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20231003/pngtree-vibrant-neon-light-frame-showcasing-a-stunning-purple-geometric-design-image_13509993.png);
+    background-size: cover;
+}
+
+h1,p{
+    color: white;
+}
+
+.Caja{
+    background-color:#4f4586;
+    border-radius: 10px;
+    width: 700px;
+    height: auto;
+    padding: 20px;
+}
+
+.cajas{
+    background-color: #31363F;
+    width: 500px;
+    height: auto;
+}
+
+img{
+    width: 100px;
+    height: 150px;
+}
+
+.cajahorizontal1{
+    display: flex;
+    padding: 10px;
+}
+
+.cajahorizontal2{
+    display: flex;
+    padding: 20px;
+}
+
+.cajahorizontal3{
+    display: flex;
+    padding: 20px;
+}
+
